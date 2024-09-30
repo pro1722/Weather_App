@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <!--import google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />"
+
+</head>
+<body>
+    <main class="main-container">
+        <header class="input-container">
+        <input class="city-input" placeholder="Search City" type="text">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </button>
+        </header>
+        
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                        </span>
+                    <h4 class="country-txt">United States</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Sat, Sep 28</h5>
+
+            </div>
+            <div class="weather-summary-container">
+                <img src="./assests/weather/clouds.svg" class="weather-summery-img">
+              <div class="weather-summery-info">
+                <h1 class="temp-txt"> 29 °C </h1>
+                <h3 class="condition-txt regular-txt"> Clouds</h3>
+              </div>
+            </div>
+            <div class="weather-conditions-container">
+                <!-- Humidity Item -->
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">water_drop</span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                
+                <!-- Wind Speed Item -->
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">air</span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt">2 M/s</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forcast-items-container">
+                <div class="forecast-item">
+                    <h5 class= "forcast-item-date regular-txt" > Sep 28  </h5>
+                    <img src="./assests/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"> 29 °C </h5>
+
+                </div>
+                <div class="forecast-item">
+                    <h5 class= "forcast-item-date regular-txt" > Sep 28  </h5>
+                    <img src="./assests/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"> 29 °C </h5>
+
+                </div>
+                <div class="forecast-item">
+                    <h5 class= "forcast-item-date regular-txt" > Sep 28  </h5>
+                    <img src="./assests/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"> 29 °C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class= "forcast-item-date regular-txt" > Sep 28  </h5>
+                    <img src="./assests/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"> 29 °C </h5>
+                </div>
+            </div>  
+        </section>
+         <section class="search-city section-message">
+          <img  src="./assests/messge/search-city.png" alt="">
+            <div>
+                <h1>Search City</h1>
+                <h4 class ="regular-tect">
+                    Find out the weather conditions of the city.
+                </h4>
+            </div> 
+        </section>
+        <section class="not-found section-message" style="display:none">
+            <img  src="./assests/messge/not-found.png" alt="">
+              <div>
+                  <h1>Search City</h1>
+                  <h4 class ="regular-tect">
+                      Find out the weather conditions of the city.
+                  </h4>
+              </div>
+  
+              
+          </section>
+
+    </main>
+    
+</body>
+</html>
